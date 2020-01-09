@@ -1,0 +1,158 @@
+.paymentBtnGroup{
+	margin:10px;	
+}
+ 
+ 
+.paymentMethod.active {
+	outline: none !important;
+}
+
+.paymentMethod.active .method {
+	outline: none !important;
+    box-shadow: 0px 3px 22px 0px #333;
+    border: 2px solid #333;
+}
+
+.paymentMethod:active, .paymentMethod.active{
+	box-shadow: none;
+}	
+
+.paymentMethod {
+	margin-bottom: 5px;
+	height: 80px;
+    width: 120px; 
+	position: relative;
+	margin: 10px;
+}	
+.paymentMethod .method{
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	bottom: 1px;
+	left: 1px;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+}
+.paymentMethod.disabled {
+    filter: grayscale(100%);
+    opacity: .4;
+}
+.visa-icon, .creditcard-visa-icon {
+	background-image: url("../images/visacard.svg"),linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-size: 98%, cover !important;
+}
+
+.mastercard-icon, .creditcard-mastercard-icon{
+	background-image: url("../images/mastercard.svg"),linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);;
+	background-size: 98%, cover !important;
+}
+
+.creditcard-jcb-icon{
+	background-image: url("../images/jcb.svg"),linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);;
+	background-size: 98%, cover !important;
+}
+
+.creditcard-unionpay-icon{
+	background-image: url("../images/unionpay.svg"),linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);;
+	background-size: 90%, cover !important;
+}
+
+.androidpay-icon {
+	background-image: url("../images/googlepay.svg");
+	background-size: 75%, cover !important;
+}
+
+.applepay-icon {
+	background-image: url("../images/applepay.svg"),linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);;
+	background-size: 100%, cover !important;
+	border: none !important;
+} 
+.pps-icon{
+	background-image: url("../images/ppshk.svg"),linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);;
+	background-size: 80%, cover !important;
+} 
+.qrcode-icon{
+	font-size: 18px; 
+    display: inline-block; 
+    line-height: 70px;
+    vertical-align: middle;
+} 
+.echq-icon{
+	background-image: url("../images/echeque.png"),linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);;
+	background-size: 80%, cover !important;
+}
+.qrcode-icon .gov{
+	color:rgb(160,159,162);
+}
+
+.qrcode-icon .hk{
+	color:rgb(248,151,33);
+}
+
+.qrcode-icon .pay{
+	color:rgb(204,76,2);
+}
+.paymentMethod .method:hover {
+	outline: none !important;
+}
+
+.showPaymentMethodNote ul{
+	list-style: disc;
+    padding-left: 20px;
+}
+
+
+.showPaymentMethodNote ul li{
+	margin: 15px 0;
+	font-size: smaller;
+}
+
+.paymentDetailsTitleIcon{
+	vertical-align: text-bottom;
+}
+
+.loader {
+    border: 16px solid #f3f3f3;  
+    border-top: 16px solid #3498db;  
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+}
+
+.list-group-item{ 
+    background-color: #eee;
+} 
+ 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 323px){
+	.paymentMethod {
+	    padding: 32px 48px;
+	}
+}
+
+@media (max-width: 362px){
+	.paymentMethod {
+	    padding: 36px 54px;
+	}
+}
+@media (max-width: 362px) {
+	 .paymentMethod{
+		padding: 28px 42px;
+	}
+}
+
+/*--- Small devices (landscape phones, 576px and up)----*/
+@media (min-width: 576px) and (max-width: 767px) {
+	 
+}
+ 
